@@ -45,5 +45,6 @@ pre(`
   isZero one = ${showBool(isZero(one))}
   fact zero = ${showNumber(fact(zero))}
   fact one = ${showNumber(fact(one))}
-  fact succ(two) = ${showNumber(fact(succ(two)))}
+  fact (succ two) = ${showNumber(fact(succ(two)))}
+  fact (succ (succ two)) = ${showNumber(fact(succ(succ(two))))}
 `);
