@@ -43,5 +43,7 @@ h5("Factorial à la 1940");
 pre(`
   isZero zero = ${showBool(isZero(zero))}
   isZero one = ${showBool(isZero(one))}
-  fact zero = ${showBool(fact(zero))}
+  fact zero = ${showNumber(fact(zero))}
+  fact one = ${showNumber(fact(one))}
+  fact succ(two) = ${showNumber(fact(succ(two)))}
 `);
