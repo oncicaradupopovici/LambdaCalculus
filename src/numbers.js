@@ -8,4 +8,4 @@ export const mult = (m) => (n) => (f) => (x) => m(n(f))(x);
 export const pred = (n) => (f) => (x) =>
   n((g) => (h) => h(g(f)))((u) => x)((u) => u);
 
-export const showNumber = (n) => n((x) => x + 1)(0);
+export const toNumber = (n) => n((x) => x + 1)(0);
